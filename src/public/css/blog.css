@@ -1,0 +1,99 @@
+
+
+.blog {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.blog:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.blog img {
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 5px 5px 0 0; */
+}
+
+.blog-insights {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 10px 20px;
+    color: #cacaca;
+}
+
+.blog-insights h4 {
+    padding: 3px 10px;
+    display: inline;
+    border-radius: 10px;
+    border: 1px solid #f5ba1a;
+    box-shadow: #f5bb1a80 0px 0px 4px 1px inset;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: normal;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.blog-insights .like, .blog-insights .dislike {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-insights .like i {
+    color: green;
+}
+
+.blog-insights .dislike i {
+    color: red;
+}
+
+.heading {
+    margin: 0 20px 10px 20px;
+    color: #ffffff;
+    text-align: justify;
+}
+.heading h3 {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+.heading p {
+    font-size: 14px;
+    white-space: pre-wrap;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+.writer-detail {
+    margin: 10px 20px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #cacaca;
+    width: calc(100% - 40px);
+}
+
+.writer {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.writer img {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 1px solid #cacaca;
+}

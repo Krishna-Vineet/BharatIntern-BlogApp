@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/header.css">
+
+    <div class="header-container">
+        <div class="left">
+            <div class="hamburger" onclick="toggleSidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="add">
+                <button onclick="location.href='/add-blog'"><i class="fa-solid fa-pencil"></i>Add Blog</button>
+            </div>
+        </div>
+        <div class="logo">
+            Blogit
+        </div>
+        <div class="right">
+            <div class="search-bar">
+                <input type="text" id="searchInput" autocomplete="off" placeholder="Search..." onkeypress="if(event.keyCode == 13) searchBlogs()">
+                <button type="button" onclick="searchBlogs()"><i class="fa fa-search"></i></button>
+            </div>
+            <div id="user-profile">
+                <!-- User profile will be dynamically updated -->
+            </div>
+        </div>
+    </div>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <div class="cross">
+                <i class="fa fa-x" onclick="toggleSidebar()"></i>
+            </div>
+            <h2>Trending Blogs</h2>
+            <ul id="trendingPosts">
+                <!-- Trending blogs will be dynamically updated -->
+            </ul>
+            <h2>Popular Authors</h2>
+            <ul id="topAuthors">
+                <!-- Top authors will be dynamically updated -->
+            </ul>
+            <div id="followedBlogsSection">
+                <!-- Followed user blogs will be dynamically updated -->
+            </div>
+        </div>
+    </div>
+    <script src="/js/header.js"></script>
+
+
